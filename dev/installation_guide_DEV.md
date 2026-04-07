@@ -51,7 +51,7 @@ Dopo aver lavorato su **QUELLA SPECIFICA BRANCH** arriva il momento di caricare 
 3. PUSH <br>
     Arrivati a questo punto bisogna premere l'ultimo inebreiante invio prima di lanciare i nostri file sul cloud. Questo si fà tramite un comando sensazionale (perché ti riempie di energie premere invio):
 
-        git push -u origin main
+        git push -u origin <<*nome_branch*>>
 
 ## Autenticazione <br>
 La prima vola che si farà un push di questo tipo verrà chiesto di autenticarsi <br>
