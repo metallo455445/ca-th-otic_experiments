@@ -1,66 +1,66 @@
-# Guida all'istallazione (fedora edition)
+# Installation guide (fedora edition)
 
-## Pre-requisiti
-- git installato su pc
+## Pre-requisites
+- git installed on pc
 
-## 1. Clonazione repo
+## 1. Repo cloning
 ![image](sprites/screen1.png)
-1. Andare nella schermata principalre della repo
-2. Premere il pulsante verde <code>Code</code>
-3. Selezionare Local -> clone -> HTTPS e copiare il link tramite l'apposito pulsante
-4. Sul proprio PC aprire il terminale e navigare verso una cartella qualsiasi ES:<code>/.../Documenti/</code>
+1. Go to the main screen of the repo
+2. Press the green <code>Code</code> button
+3. Select Local -> clone -> HTTPS and copy the link using the appropriate button
+4. On your PC, open the terminal and navigate to any folder EX:<code>/.../Documents/</code>
 
-<code>!!ATTENZIONE!!</code> **non** serve creare una cartella chiamata *ca-th-otic_experiments*, verrà creata automaticamente in fase di clonazione
+<code>!!WARNING!!</code> you do **not** need to create a folder called *ca-th-otic_experiments*, it will be created automatically during the cloning phase
 
-5. Eseguire il comando:
+5. Run the command:
 
-        git clone <<*link_copiato*>>
+        git clone <<*copied_link*>>
 
-## 2. Creare una nuova Branch
-Una volta scelto il ticket da voler completare si aprirà una Branch che implementa quella funzione. Prima di tutto è sempre consigliabile fare un 
+## 2. Create a new Branch
+Once you have chosen the ticket you want to complete, you will open a Branch that implements that feature. First of all, it is always advisable to do a 
 
     git pull
 
-in generale ogni volta prima di iniziare a lavorare (buona norma :D).
-Dopodichè si può creare  la Branch vera e propria con il comando:
+in general every time before starting to work (good practice :D).
+After that, you can create the actual Branch with the command:
 
-    git checkout -b <<*nome_branch*>>
+    git checkout -b <<*branch_name*>>
 
-Questo crea una Branch in locale che vi permette di lavorare comodamente al vostro codice (senza crearla nel cloud!)
+This creates a local Branch that allows you to comfortably work on your code (without creating it in the cloud!)
 
-## 3. Upload modifiche
-Dopo aver lavorato su **QUELLA SPECIFICA BRANCH** arriva il momento di caricare sul coud comune le modifiche svolte. 
+## 3. Upload changes
+After working on **THAT SPECIFIC BRANCH**, the time comes to upload the changes made to the common cloud. 
 
-1. prepareare i file da uploadare
+1. prepare the files to upload
 
-        git add <<*roba*>
+        git add <<*stuff*>
 
-    ti permette di selezionare il percorso file dei file che vuoi caricare. Se vuoi care caricare tutto senza lasciare alcun file si può usare più comodamente:
+    allows you to select the file path of the files you want to upload. If you want to upload everything without leaving any file behind, you can use more conveniently:
 
         git add .
 
-2. creazione del commit <br>
-    Il commit è semplicemnete un commento che si aggiunge ai file che hai caricato in cui descrive brevemente cosa hai fatto. Esempi comuni possono essere:
+2. commit creation <br>
+    The commit is simply a comment added to the files you uploaded that briefly describes what you did. Common examples can be:
 
-        "fix-ticket-6" oppure "aggiornato con nuovi dati"
+        "fix-ticket-6" or "updated with new data"
 
-    il comando per fare il commit è:
+    the command to commit is:
 
-        git commit -m "<<*messaggio*>>"
+        git commit -m "<<*message*>>"
 
 3. PUSH <br>
-    Arrivati a questo punto bisogna premere l'ultimo inebreiante invio prima di lanciare i nostri file sul cloud. Questo si fà tramite un comando sensazionale (perché ti riempie di energie premere invio):
+    At this point, you have to press the last intoxicating Enter before launching our files onto the cloud. This is done via a sensational command (because pressing Enter fills you with energy):
 
-        git push -u origin <<*nome_branch*>>
+        git push -u origin <<*branch_name*>>
 
-## Autenticazione <br>
-La prima vola che si farà un push di questo tipo verrà chiesto di autenticarsi <br>
+## Authentication <br>
+The first time you do a push of this kind, you will be asked to authenticate <br>
 
-1. username: il vostro nome su github, va bene anche l'email
-2. password/token: questo può causare confuzione perchè non si tratta della password dell'account github bensì di un token
+1. username: your github name, email is fine too
+2. password/token: this can cause confusion because it's not the github account password but rather a token
 
-## Genearare un token <br>  
-1. Premere sull'icona del proprio profilo (in alto a destra) -> settings ->scorrere in basso fino alla voce *Developer settings*
+## Generate a token <br>  
+1. Click on your profile icon (top right) -> settings -> scroll down to *Developer settings*
 ![image](sprites/dev_set.png)
 
 2. .
@@ -69,11 +69,11 @@ La prima vola che si farà un push di questo tipo verrà chiesto di autenticarsi
 3. .
 ![image](sprites/gent_token.png)
 
-4. A questo punto vi chiederà di atutenticarvi, fate un accesso normale, vi si aprirà poi questa schermata
+4. At this point it will ask you to authenticate, log in normally, then this screen will open
 ![image](sprites/costomize_token.png) 
-fare check di tutte le caselle, nelle note scrivete quello che vi pare (tipo pc fedora) e poi generre il token
+check all the boxes, in the notes write whatever you like (like pc fedora) and then generate the token
 
-5. copiare il token ed inserirlo dove richiesto
+5. copy the token and insert it where required
 
 ## Merge Conflicts
-Brutta cosa, chiedere a gemini...
+Bad stuff, ask gemini...
